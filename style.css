@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima'), url('assets/fonts/OPTIMA.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Optima Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Italic'), url('assets/fonts/Optima_Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Optima Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Medium'), url('assets/fonts/Optima\ Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Optima Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Bold'), url('assets/fonts/OPTIMA_B.woff') format('woff');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Optima';
+
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    -webkit-font-smoothing: antialiased;
+}
+body{
+    background-color: #0b0b0b;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+} 
+
+header {
+    height: 15vh;
+    top: 0;
+    position: fixed;
+    padding-left: 10vw;
+    padding-top: 5vh;
+    z-index: 5;
+ .logo {
+    height: 5vh;
+    top: 0;
+}
+}
+
+.page1 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background-color: #0b0b0b;
+
+   
+}
+.page1-h2{
+       
+   
+    width: 100%;
+    text-align: left;
+    font-family: "Optima Bold";
+    letter-spacing: 0px;
+    font-size: 2.5vmax;
+    color: #f0f0f0 !important;
+    opacity: 1;
+    margin-bottom: 3vh;
+}
+.text-scramble{
+    font-weight: normal;
+    font-style: italic;
+}
+.page1-h4{
+
+    text-align: left;
+    font: normal normal normal 20px/23px Optima;
+    letter-spacing: 0px;
+    font-size: 1vmax;
+    color: #ACACAC !important;
+    margin-bottom: 3vh;
+}
+.page1-h4 span{
+    font-weight: bold;
+letter-spacing: 1px;
+color: #f0f0f0;
+}
+.early{
+    display: flex;
+    align-items: center;
+    gap:8px;
+    .early-arrow{
+        width: 0.8vmax;
+height: 0.8vmax;
+    }
+}
+.page1-leftimg{
+    height: 3.2vmax;
+    width: 15vmax;
+    margin-bottom: 2.5vh;
+}
+.page1-h3{
+    text-align: left;
+letter-spacing: 0px;
+font-weight: 100;
+font-size: 1vmax;
+color: #ACACAC;
+opacity: 1;
+}
+.join{
+    position: absolute;
+    bottom: 0;
+   width: 60%;
+   padding-left: 10vw;
+}
+.join h3{
+
+    text-align: left;
+    font-weight: bold;
+    font-size: 5vmax;
+letter-spacing: 0px;
+color: #f0f0f0;
+opacity: 0;
+}
+
+.left{
+    width: 55vmax;
+    padding-left: 10vw;
+    padding-top: 35vh;
+    padding-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.right{
+    width: 45vmax;
+    display: flex;
+    
+}
+.page1 .right{
+    align-items: center;
+}
+  @keyframes fade{ 0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  }
+  
+ 
+  
+  #slider{
+    margin:0 auto;
+    width:100%;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slides{
+    overflow:hidden;
+    animation-name:fade;
+    animation-duration:1s;
+    display:none;
+  }
+  
+  .slides img{
+    width:80%;
+    height: 80%;
+
+  }.page2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.page2-left {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.page2-right {
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.detailsWrapper {
+    padding: 20px;
+}
+
+.details {
+    margin-bottom: 20px;
+    height: 100vh;
+}
+
+.page2-heading {
+    font-size: 24px;
+}
+
+.page2-desc {
+    font-size: 16px;
+}
+
+  @media (max-width:600px){
+
+    .page1,.page2{
+        flex-direction: column;
+    }
+    header{
+        padding-left: 5vw;
+    }
+.left{
+    width: 100vw;
+    padding-top: 20vh;
+    padding-left: 5vw;
+height: 50%;
+}
+.right{
+    width: 100vw;
+    height: 50%;
+    align-items: center;
+    padding-left: 10vw;
+}
+
+.page1-h2{
+       
+   
+    width: 100%;
+    text-align: left;
+    font-family: "Optima Bold";
+    letter-spacing: 0px;
+    font-size: 3.5vmax;
+    color: #f0f0f0 !important;
+    opacity: 1;
+    margin-bottom: 2vh;
+}
+.text-scramble{
+    font-weight: normal;
+    font-style: italic;
+}
+.page1-h4{
+
+   
+    font-size: 2vmax;
+    width: 80%;
+    margin-bottom: 2vh;
+}
+.early{
+   
+    .early-arrow{
+        width: 1vmax;
+height: 1vmax;
+    }
+}
+.page1-leftimg{
+    height: 6.5vmax;
+    width: 30vmax;
+    margin-bottom: 1.5vh;
+}
+.page1-h3{
+font-size: 2vmax;
+
+}
+    #slider{
+      width:100%;
+  
+    }
+  }
+  
