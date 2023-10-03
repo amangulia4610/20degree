@@ -186,45 +186,7 @@ opacity: 0;
     width:80%;
     height: 80%;
 
-  }.page2 {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-}
-
-.page2-left {
-    width: 50%;
-    height: 100%;
-    background-color: #fff;
-    overflow-y: auto;
-}
-
-.page2-right {
-    width: 50%;
-    height: 100%;
-    background-color: #000;
-    position: fixed;
-    right: 0;
-    top: 0;
-}
-
-.detailsWrapper {
-    padding: 20px;
-}
-
-.details {
-    margin-bottom: 20px;
-    height: 100vh;
-}
-
-.page2-heading {
-    font-size: 24px;
-}
-
-.page2-desc {
-    font-size: 16px;
-}
+  }
 
   @media (max-width:600px){
 
