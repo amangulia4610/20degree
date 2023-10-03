@@ -112,27 +112,3 @@ function loco() {
  },
  opacity: 0,
  });
-// GSAP ScrollTrigger
-// gsap.registerPlugin(ScrollTrigger);
-
-// Scroll left pin right
-// gsap.to(".page2-right", {
-//     x: "-50%",
-//     duration: 1,
-//     ease: Power3.easeInOut,
-//     scrollTrigger: {
-//         trigger: ".page2",
-//         pin: true,
-//         scrub: true,
-//         start: "top top",
-//         end: "bottom bottom",
-//     },
-// });
-ScrollTrigger.create({
-    trigger: ".page2",
-    start: "top top",
-    end: "bottom bottom",
-    pin: ".page2-right",
-    pinSpacing: false, // Adjust this option if needed
-  });
-  
